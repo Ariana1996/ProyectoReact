@@ -6,11 +6,11 @@ function NotFoundPage() {
 
     let navigateTo = useNavigate();
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         navigateTo(-1);
-    //     }, 2000);
-    // }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            navigateTo(-1);
+        }, 2000);
+    }, []);
 
     return (
         <div>
