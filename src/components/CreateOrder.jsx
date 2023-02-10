@@ -16,7 +16,6 @@ function CreateOrder() {
 
     const [idForm, setIdForm] = useState("");
 
-    console.log(form);
     function onSubmit(event) {
         event.preventDefault();
         const newForm = { ...form };
@@ -44,7 +43,6 @@ function CreateOrder() {
     }
 
     function clearForm(event) {
-
         const newForm = {
             name: "",
             lastName: "",
