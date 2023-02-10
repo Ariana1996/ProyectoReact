@@ -13,10 +13,10 @@ function NotFoundPage() {
     }, []);
 
     return (
-        <div>
+        <div className="centerContent"> 
             <h1>Uppss.. no encontramos el plato</h1>
             <img className="imgNotFound" src="https://www.shutterstock.com/image-vector/vector-illustration-cute-whitered-cat-260nw-2181985225.jpg"></img>
-            <span>Serás redireccionado a la página principal</span>
+            <span >Serás redireccionado a la página principal</span>
         </div>
     )
 }
