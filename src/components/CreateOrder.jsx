@@ -1,8 +1,7 @@
 function CreateOrder() {
 
-    function onSubmit(evt) {
-        evt.preventDefault();
-        props.onSubmit(userData);
+    function onSubmit() {
+  
       }
 
     return (
