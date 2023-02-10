@@ -1,9 +1,17 @@
 import "../assets/css/style.css"
+import { cartContext } from "../storage/ContextProvider";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 
-function CardWidget(){
+function CardWidget() {
+      const { GetMealCount } = useContext(cartContext);
 
-return(
-      <a className="nav-link" href="/">(1)🛒</a>
-);
+      return (
+            <>
+                  <Link className="nav-link" to="/cart">
+                        {GetMealCount()}🛒
+                  </Link>
+            </>
+      );
 }
 export default CardWidget;

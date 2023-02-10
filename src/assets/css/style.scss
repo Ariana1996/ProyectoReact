@@ -1,4 +1,12 @@
-@import
-"./partials/navBar",
+@import "./partials/navBar",
 "./partials/item",
-"./partials/itemDetailContainer"
+"./partials/itemDetailContainer",
+"./partials/notFound",
+"./partials/cart",
+"./partials/createOrder";
+
+.centerContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

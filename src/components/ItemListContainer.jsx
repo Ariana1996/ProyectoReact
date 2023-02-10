@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/style.css"
-import getAllItems, {getItemsByCategory} from "../services/mockFood"
 import Item from "./Item";
 import "../assets/css/style.css";
 import { useParams } from 'react-router-dom';
+import {getAllItems,getItemsByCategory,InsertData} from "../services/firebase"
 
 function ItemListContainer() {
   let { category } = useParams();
@@ -34,7 +34,7 @@ function ItemListContainer() {
           <Item
             key={item.id}
             id={item.id}
-            tittle={item.tittle}
+            title={item.title}
             price={item.price}
             detail={item.detail}
             imgUrl={item.imgUrl}
