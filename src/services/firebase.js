@@ -50,7 +50,7 @@ export async function getItemsByCategory(category) {
 export async function getSingleItem(itemID) {
     const docMeals = doc(db, "meals", itemID);
     const querySnapshot = await getDoc(docMeals);
-  
+
     //return  {...snapshot.data(), id: snapshot.id};
     const meal = querySnapshot.data();
     meal.id = querySnapshot.id;
@@ -59,9 +59,17 @@ export async function getSingleItem(itemID) {
 
 export async function InsertData() {
     const tableOfCollection = collection(db, "meals");
-  
+
     for (let meal of meals) {
         delete meal.id;
         addDoc(tableOfCollection, meal).then((res) => console.log("creado"));
     }
+}
+
+export async function InsertFormAndGetIdForm(form, cart) {
+    const tableOfCollection = collection(db, "forms");
+    delete form.emailRepeatHasError;
+    form.carrito = cart;
+    const docRef = await addDoc(tableOfCollection, form);
+    return docRef.id;
 }

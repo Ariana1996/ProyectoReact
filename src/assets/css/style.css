@@ -40,6 +40,10 @@
   flex-wrap: wrap;
 }
 
+.card-img-top {
+  width: 100%;
+}
+
 .card-detail_img {
   height: 310px;
   -o-object-fit: cover;

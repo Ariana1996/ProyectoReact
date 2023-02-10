@@ -7,7 +7,7 @@ function Item({id, title, price, imgUrl}) {
     return (
         <>        
         <div className="card">          
-            <img src={imgUrl} className="card-img-top" Style="width:100%"></img>
+            <img src={imgUrl} className="card-img-top"></img>
             <div className="container">
             <h4><b>{title}</b></h4>
                 <p className="card-text">Price ${price}</p>
