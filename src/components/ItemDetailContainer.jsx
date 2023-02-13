@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { getSingleItem } from "../services/firebase";
 import "../assets/css/style.css";
 import ButtonsToCart from "./ButtonsCart";
@@ -11,11 +11,21 @@ function ItemDetailContainer() {
     const [meal, setMeal] = useState([]);
     let { itemID } = useParams();
     const { addMeal } = useContext(cartContext);
+    const navigateTo = useNavigate();
 
     useEffect(() => {
         getSingleItem(itemID).then((respuesta) => {
             setMeal(respuesta);
-        });
+            setTimeout(() => {
+                if (!respuesta) {
+                    navigateTo(`*`);
+                };
+            }, 2000);
+        }).catch(() =>
+            navigateTo(`*`)
+        );
+
+
     }, [itemID]);
 
     function ModifyCart(quantityToModify) {

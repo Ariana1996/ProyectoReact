@@ -50,8 +50,6 @@ export async function getItemsByCategory(category) {
 export async function getSingleItem(itemID) {
     const docMeals = doc(db, "meals", itemID);
     const querySnapshot = await getDoc(docMeals);
-
-    //return  {...snapshot.data(), id: snapshot.id};
     const meal = querySnapshot.data();
     meal.id = querySnapshot.id;
     return meal;
