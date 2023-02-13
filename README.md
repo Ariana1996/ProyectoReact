@@ -3,7 +3,7 @@
 ## Temática de la web
 
 Amo la comida y los michis, así que elegí esa temática 
-![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg)
+![Image text](https://github.com/Ariana1996/ProyectoReact/tree/main/src/assets/img/michision.jpg)
 
 
 
