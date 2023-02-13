@@ -5,7 +5,7 @@
 Amo la comida y los michis, así que elegí esa temática 
 ![App Screenshot](https://github.com/Ariana1996/ProyectoReact/tree/main/src/assets/img/michision.jpg)
 
-![alt text](http://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbegpPAEMculEYRHeibYGArzOzOVq9IViOuB4Uc-AzofmWaJzwCARW-aW8oRbsXmP7vfc&usqp=CAU)
+![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbegpPAEMculEYRHeibYGArzOzOVq9IViOuB4Uc-AzofmWaJzwCARW-aW8oRbsXmP7vfc&usqp=CAU)
 
 
 
