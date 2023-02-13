@@ -11,7 +11,7 @@ Amo la comida y los michis, así que elegí esa temática
 
 ## Learn More
 
-En mi página podrás elegir tu comida favorita y agregarla al carrito y llenar la pancita. 
+En mi página podrás elegir tu comida favorita, agregarla al carrito y llenar la pancita. 
 
 Se incluyó la librería Toastify.
 La cual sirve para mostrar notificaciones al usuario, personalizando a través de parámetros.
